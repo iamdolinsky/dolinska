@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xml:lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Полина Долинская</title>
+
+  <link rel="stylesheet" title="Light" href="https://unpkg.com/awsm.css@3/dist/awsm.min.css" />
+  <link rel="alternate stylesheet" title="Dark" href="https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @import url(https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css) only screen and (prefers-color-scheme: dark);
+
+    html {
+      font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      transition: background-color 1s;
+    }
+
+    body main, body footer, body article {
+      max-width: 50rem;
+    }
+
+    a:visited:not(:hover) {
+      color: #0064c1;
+    }
+
+    .screen-header {
+      /* Stolen from https://react-coroutine.js.org/ */
+      font-size: 2em;
+      max-width: 100%;
+      margin: 3em 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+
+    .screen-header p {
+        font-size: .65em;
+      opacity: 0.7;
+    }
+
+    .screen-header h1 {
+        opacity: 0.9;
+        margin-bottom: .45em;
+    }
+
+    ul {
+    list-style: none;
+}
+
+ul li:before {
+    content:  "—";
+    position: relative;
+    left:     -4px;
+}
+    .avatar {
+      height: 250px;
+      width: 250px;
+      margin-bottom: 0.5em;
+      border-radius: 50%;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .avatar img {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 300ms;
+    }
+
+    .avatar.is-alternate img {
+      opacity: 1;
+    }
+
+    @media print {
+      .avatar img {
+        opacity: 1;
+      }
+    }
+
+    .screen-header p {
+      max-width: 40rem;
+      hyphens: none;
+    }
+
+    @media screen {
+      .only-print {
+        display: none;
+      }
+    }
+
+    @media print {
+      .only-screen {
+        display: none;
+      }
+
+      .print-avatar {
+        float: right;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-block-start: .5em;
+      }
+
+      section + section {
+        margin-block-start: .5em;
+      }
+    }
+
+    .buzzwords {
+      font-size: 0.85em;
+    }
+
+    .work-position {
+      break-inside: avoid;
+    }
+
+    a.unimportant-link:not(:hover),
+    a.unimportant-link:not(:hover):visited {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header class="screen-header only-screen">
+    <h1>Полина Долинская<br>копирайтер, корректор </h1>
+    <p>
+      Пишу тексты на различную тематику. Делаю&nbsp;рерайт. 
+      Нахожу и&nbsp;исправляю грамматические, пунктуационные, стилистические и&nbsp;смысловые&nbsp;ошибки.
+    </p>
+  </header>
+
+  <article>
+    <h2 id="portfolio">Мои работы</h2>
+
+    <h3 id="journalism">Журналистика</h3>
+    <p>Статьи с использованием seo-элементов на портале недвижимости DOMIK.UA. Занималась фактчекингом, брала интервью и собирала информацию от застройщиков:</p>
+    <ul>
+      <li>
+    <a href="http://domik.ua/novosti/gotovye-kvartiry-ot-zastrojshhikov-na-pravom-beregu-kieva-spisok-novostroek-n257536.html">про готовые квартиры</a>,
+    </li>
+    <li>
+        <a href="http://domik.ua/novosti/gde-v-kieve-zhit-xorosho-massiv-nivki-n257784.html">про жилой массив</a>,
+        </li>
+        <li>
+            <a href="http://domik.ua/novosti/obzor-novostroek-vozle-torgovyx-centrov-kieva-n257799.html">обзор новостроек</a>,
+            </li>
+            <li>
+                <a href="https://domik.ua/novosti/obzor-novostroek-vozle-ozer-na-levom-beregu-kieva-n257634.html">обзор новостроек №2</a>.
+                </li>
+    </ul>
+    <hr>
+
+    <h3 id="fashion">Fashion- и beauty-индустрия</h3>
+    <p>Различные описания одежды, обуви, аксессуаров и косметических средств для магазина SANAHUNT. Писала инструкции, делала рерайт перевод с сайта производителя:</p>
+    <ul>
+      <li>
+    <a href="#">платье</a>,</li>
+    <li>
+        <a href="#">свитер</a>,</li>
+        <li>
+            <a href="#">ботильоны</a>,</li>
+            <li>
+                <a href="https://sanahunt.com/catalog/un-air-de-paris-spicy-80-ml/p4765">вода парфюмированная</a>,</li>
+                <li>
+                    <a href="#">шампунь для волос</a>,</li>
+                    <li>
+                        <a href="https://sanahunt.com/catalog/maska-dlya-lica-omolazhivayushchaya-pitatelnaya/p4646">маска для лица</a>.</li>
+    </ul>
+    <hr>
+    
+    <h3 id="brand">Продвижение брендов</h3>
+    <p>Статьи для e-commerce и на общую тематику:</p>
+    <ul>
+      <li>
+    <a href="https://docs.google.com/document/d/1ggET6EH1Q_HwLjk7hj-Oaav8M0s1gUU5pkDDgtTiXrg/edit#heading=h.m4avioge8p7z">текст про кроссовки</a>,
+    </li>
+    <li>
+        <a href="https://docs.google.com/document/d/1Z0VZQVo9n85xEnHEPSvufViQMN7M4coB4Jd_fVMfCxw/edit">здоровье после 60</a>.
+    </li>
+    </ul>
+
+ 
+  </article>
+
+  <footer>
+    <p>&copy; 2021, Полина Долинская</p>
+  </footer>
+
+
+
+</body>
+</html>
